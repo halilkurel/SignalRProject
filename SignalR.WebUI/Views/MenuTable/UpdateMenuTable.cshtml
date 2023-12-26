@@ -1,0 +1,41 @@
+﻿@model UpdateMenuTableDto
+
+@{
+    ViewData["Title"] = "UpdateMenuTable";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h1>Masa Güncelle</h1>
+
+<h4>UpdateMenuTableDto</h4>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="UpdateMenuTable">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MenuTableId" class="control-label"></label>
+                <input asp-for="MenuTableId" class="form-control" />
+                <span asp-validation-for="MenuTableId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Geri Dön</a>
+</div>
+

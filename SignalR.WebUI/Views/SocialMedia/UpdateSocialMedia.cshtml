@@ -1,0 +1,38 @@
+﻿@model SocialMediaUpdateDto
+@{
+    ViewData["Title"] = "UpdateSocialMedia";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-md-12">
+	<form method="post">
+		<input type="hidden" asp-for="SocialMediaId" />
+		<div class="card">
+			<div class="card-header">
+				<div class="card-title">Sosyal Medya Hesabı Güncelle</div>
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+					<label for="Title">Başlık Giriniz</label>
+					<input type="text" asp-for="Title" class="form-control" id="Title">
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+					<label for="Url">Url Giriniz</label>
+					<input type="text" asp-for="Url" class="form-control" id="Url">
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+					<label for="Icon">Icon Giriniz</label>
+					<input type="text" asp-for="Icon" class="form-control" id="Icon">
+				</div>
+			</div>
+
+			<div class="card-action">
+				<button class="btn btn-success">Güncelle</button>
+			</div>
+		</div>
+	</form>
+</div>

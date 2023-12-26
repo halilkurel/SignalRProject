@@ -1,0 +1,34 @@
+﻿
+@{
+    Layout = null;
+    <!-- UILayout -->
+}
+
+<!DOCTYPE html>
+<html>
+
+@await Component.InvokeAsync("_UILayoutHeadComponentPartial")
+
+
+<body class="sub_page">
+    @await Component.InvokeAsync("_UILayoutNavbarComponentPartial")
+    
+    
+
+    <!-- book section -->
+    <div class="hero_area">
+        @RenderBody()
+    </div>
+
+    
+    <!-- end book section -->
+    <!-- footer section -->
+    @await Component.InvokeAsync("_UILayoutFooterComponentPartial")
+    <!-- footer section -->
+    <!-- jQery -->
+    @await Component.InvokeAsync("_UILayoutScriptComponentPartial")
+    <!-- End Google Map -->
+
+</body>
+
+</html>

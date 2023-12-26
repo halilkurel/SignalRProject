@@ -1,0 +1,30 @@
+08.12.2023(1 saat)
+
+-Katmanlar oluþturuldu ve entityler yazýldý
+-Gerekli EntityFramework paketleri kuruldu
+-Interfaceler yazýldý
+
+
+
+09.12.2023(2 Buçuk saat)
+
+-Manager Sýnýflarý yazýldý
+-Dto'lar yazýldý
+-AutoMapper kuruldu
+-Api testeleri gerçekleþtirildi
+-Product ve Category için EntityFramework'e özgü metot yazýldý(Api katmanýnda)
+-Admin Temasýný wwwrootun içine attýk
+-Layout için ViewCompoent Kullandýk ve parçalara ayýrdýk
+
+SignalR Kuruumu
+-UI katmanýnda Add-ClientSideLibrary açalým
+-@microsoft/signalR yazalým iki dosyayý seçip yükleyelim
+-APi katmanýna Hub Klasörü oluþturup SignalRHub Sýnýfý oluþturalým ve Hub'a kalýtalým
+-Api Katmaný Program.cs içerisinde ;
+	//Cors Politikasý
+	//SignalR Kütüphanesi Ekleme iþlemi
+	// Politikalarýn çalýþmasý için
+	//SignalR endpoind     ilgili baþlýklarý ekleyelim
+	//SignalR baðlantýsý için Section oluþturduk
+	/* setInterval komutu belirlediðimiz zaman süresinde çalýþýr */
+

@@ -1,0 +1,43 @@
+﻿@model DiscountUpdateDto
+@{
+    ViewData["Title"] = "UpdateDiscount";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-md-12">
+	<form method="post">
+		<div class="card">
+			<div class="card-header">
+				<div class="card-title">Yeni İndirimli Ürün Girişi</div>
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+					<input type="hidden" asp-for="DiscountId" />
+					<label for="Title">Ürün Adını Giriniz</label>
+					<input type="text" asp-for="Title" class="form-control" id="Title">
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+					<label for="Amount">Ürün İndirim Oranını Giriniz</label>
+					<input type="text" asp-for="Amount" class="form-control" id="Amount">
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+					<label for="ImageUrl">Ürün Görselini Giriniz</label>
+					<input type="text" asp-for="ImageUrl" class="form-control" id="ImageUrl">
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+					<label for="Description">Ürün Açıklaması Giriniz</label>
+					<input type="text" asp-for="Description" class="form-control" id="Description">
+				</div>
+			</div>
+			<div class="card-action">
+				<button class="btn btn-success">Güncelle</button>
+			</div>
+		</div>
+	</form>
+</div>

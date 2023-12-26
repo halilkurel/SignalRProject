@@ -1,0 +1,54 @@
+﻿@model UserEditDto
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-md-12">
+	<form method="post">
+		<div class="card">
+			<div class="card-header">
+				<div class="card-title">Profil Ayarları</div>
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+					<label for="Name">Adınız</label>
+					<input type="text" asp-for="Name" class="form-control" id="Name">
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+					<label for="Surname">Soyadınız</label>
+					<input type="text" asp-for="Surname" class="form-control" id="Surname">
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+					<label for="Mail">Mail Adresiniz</label>
+					<input type="email" asp-for="Mail" class="form-control" id="Mail">
+				</div>
+			</div>
+						<div class="card-body">
+				<div class="form-group">
+					<label for="Username">Kullanıcı Adınız</label>
+					<input type="text" asp-for="Username" class="form-control" id="Username">
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+					<label for="Password">Şifreniz</label>
+					<input type="password" asp-for="Password" class="form-control" id="Password">
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="form-group">
+					<label for="ComfirmPassword">Şifre Tekrarı</label>
+					<input type="password" asp-for="ComfirmPassword" class="form-control" id="ComfirmPassword">
+				</div>
+			</div>
+			<div class="card-action">
+				<button class="btn btn-success">Güncelle</button>
+			</div>
+		</div>
+	</form>
+</div>
